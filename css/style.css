@@ -2558,12 +2558,16 @@ footer p{
     padding: 0;
 }
 
+.brand-container {
+    padding: 0 0 0 34px;
+}
+
 .brand-container-first {
-    margin: 10px 0 10px 0;
+    margin: 14px 0 21px 0;
 }
 
 .brand-container-second {
-    margin: 0 0 9px 0;
+    margin: 0 0 21px 0;
 }
 
 .brand-container-third {
@@ -2571,7 +2575,7 @@ footer p{
 }
 
 .brand-container-fourth {
-    margin: 11px 0 10px 0;
+    margin: 21px 0 21px 0;
 }
 
 .type-supply-form {
@@ -2583,7 +2587,7 @@ footer p{
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-    margin: 38px 0 0 0;
+    margin: 42px 0 0 0;
     padding: 0;
 }
 
@@ -2629,13 +2633,13 @@ footer p{
     color: #000;
 }
 
-.brand-container input[type="checkbox"] {
+/* .brand-container input[type="checkbox"] {
     display: none;
 }
 
 .brand-container label {
     cursor: pointer;
-    padding-left: 34px;
+    padding: 4px 0 4px 34px;
 }
 
 .brand-container {
@@ -2644,15 +2648,45 @@ footer p{
 }
 
 .brand-container input:checked+label {
-    background: url("../img/btn/icon_check_on.svg") no-repeat 0px 0px;
+    background: url("../img/btn/icon_check_on.svg") no-repeat 0px 4px;
 }
 
-.brand-container input:checked+.brand-check {
+input[chexbox]:checked + .brand-check {
     background: url("../img/btn/icon_check_on.svg") no-repeat 0px 0px;
+} */
+
+.filter-brands-checkbox+label::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -34px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/btn/icon_check_on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.filter-brands-checkbox:checked+label::before {
+    display: none;
+}
+
+.filter-brands-checkbox:checked+label::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -34px;
+    width: 27px;
+    height: 23px;
+    border-radius: 3px;
+    background-image: url("../img/btn/icon_check_off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .label-brand {
-    padding-left: 18px;
+    position: relative;
 }
 
 .type-device {
@@ -2839,7 +2873,7 @@ footer p{
 }
 
 .catalog-last-product-price {
-    margin-top: 26px;
+    margin-top: 28px;
     margin-bottom: 0;
 }
 
@@ -2933,7 +2967,7 @@ footer p{
         -ms-flex-align: center;
             align-items: center;
     min-width: 285px;
-    margin: 50px 0 0 0;
+    margin: 49px 0 0 0;
 }
 
 .catalog-paginator-btn {
