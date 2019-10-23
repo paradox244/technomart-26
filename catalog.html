@@ -13,7 +13,7 @@
       <div class="header-top-flex-container">
       <div class="header-top-panel">
       <div class="header-container">
-        <a href="#" class="header-logo">
+        <a href="index.html" class="header-logo">
           <span class="visually-hidden">Логотип Техномарт</span>
           <!--
             тут должен быть Логотип Техномарт
@@ -51,9 +51,7 @@
     <div class="header-middle-flex-container">
       <div class="header-middle-panel">
         <h1 class="header-store-about">
-          Интернет-магазин
-          строительных материалов<br>
-          и инструментов для ремонта
+          Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
         </h1>
         <div class="header-middle-contact-catalog">
           <a href="tel:+78125550555" class="header-contact-telephone">
@@ -87,25 +85,25 @@
         <nav class="header-nav-panel">
           <ul class="header-ul-panel">
             <li class="header-ul-panel-li">
-              <a href="index.html" class="header-ul-panel-links">Главная</a>
+              <a href="index.html" class="header-ul-panel-links home-link">Главная</a>
             </li>
             <li class="header-ul-panel-li">
-              <a href="#" class="header-ul-panel-links">Компания</a>
+              <a href="#" class="header-ul-panel-links company-link">Компания</a>
             </li>
             <li class="header-ul-panel-li">
-              <a href="catalog.html" class="header-ul-panel-links">Каталог</a>
+              <a href="catalog.html" class="header-ul-panel-links catalog-link">Каталог</a>
             </li>
             <li class="header-ul-panel-li">
-              <a href="#" class="header-ul-panel-links">Новости</a>
+              <a href="#" class="header-ul-panel-links news-link">Новости</a>
             </li>
             <li class="header-ul-panel-li">
-              <a href="#" class="header-ul-panel-links">Спецпредложения</a>
+              <a href="#" class="header-ul-panel-links special-offers-link">Спецпредложения</a>
             </li>
             <li class="header-ul-panel-li">
-              <a href="#" class="header-ul-panel-links">Доставка</a>
+              <a href="#" class="header-ul-panel-links delivery-link">Доставка</a>
             </li>
             <li class="header-ul-panel-li">
-              <a href="#" class="header-ul-panel-links">Контакты</a>
+              <a href="#" class="header-ul-panel-links contact-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -141,7 +139,7 @@
           <form action="https://echo.htmlacademy.ru" method="POST" class="form-filter-main">
             <span class="catalog-form-filter">Фильтр:</span>
             <fieldset class="price-filter-form">
-              <legend class="panel-form-title">Цена:</legend>
+              <legend class="panel-form-title ">Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -157,30 +155,30 @@
               </div>
             </fieldset>
             <fieldset class="brand-form">
-              <legend class="panel-form-title">Производители:</legend>
+              <legend class="panel-form-title manufacturer-title">Производители:</legend>
               <div class="brand-container brand-container-first">
                 <input id="bosh-checkbox" type="checkbox" name="bosch" value="bosch" checked>
-                <label for="bosh-checkbox" class="label-brand">Bosch</label>
+                <label for="bosh-checkbox" class="label-brand brand-check">Bosch</label>
               </div>
               <div class="brand-container brand-container-second">
                 <input id="interskol-checkbox" type="checkbox" name="interskol" value="interskol">
-                <label for="interskol-checkbox" class="label-brand">Интерскол</label>
+                <label for="interskol-checkbox" class="label-brand brand-check">Интерскол</label>
               </div>
               <div class="brand-container brand-container-third">
                 <input id="makita-checkbox" type="checkbox" name="makita" value="makita" checked>
-                <label for="makita-checkbox" class="label-brand">Makita</label>
+                <label for="makita-checkbox" class="label-brand brand-check">Makita</label>
               </div>
               <div class="brand-container brand-container-fourth">
                 <input id="dewalt-checkbox" type="checkbox" name="dewalt" value="dewalt">
-                <label for="dewalt-checkbox" class="label-brand">Dewalt</label>
+                <label for="dewalt-checkbox" class="label-brand brand-check">Dewalt</label>
               </div>
               <div class="brand-container">
                 <input id="hitachi-checkbox" type="checkbox" name="hitachi" value="hitachi">
-                <label for="hitachi-checkbox" class="label-brand">Hitachi</label>
+                <label for="hitachi-checkbox" class="label-brand brand-check">Hitachi</label>
               </div>
             </fieldset>
             <fieldset class="type-supply-form">
-              <legend class="panel-form-title">Питание:</legend>
+              <legend class="panel-form-title supply-title">Питание:</legend>
               <div class="charge radio_btn">
                 <input id="charge-device" class="radio-charge" type="radio" name="type-supply" value="charge" checked>
                 <label for="charge-device" class="type-device">Аккумуляторные</label>
@@ -198,7 +196,7 @@
             <span class="catalog-filter-sorting">Сортировка:</span>
             <ul class="catalog-options-parameter">
               <li class="catalog-options-btn-first">
-                <a href="#" class="catalog-options-btn">По цене</a>
+                <a href="#" class="catalog-options-btn catalog-options-btn-active">По цене</a>
               </li>
               <li class="catalog-options-btn-second">
                 <a href="#" class="catalog-options-btn">По типу</a>
@@ -255,15 +253,14 @@
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
-            <li class="catalog-production-perf">
-              <div class="flag flag-new">новинка</div>
+            <li class="catalog-production-perf flag-new">
               <img src="img/content-images/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
               <!--
                 тут должна быть картинка Перфоратор BOSCH BFG 2000
                 src="img/content-images/bfg-2000.jpg"
               -->
               <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
-              <span class="catalog-last-product-price last-product">12500 Р.</span>
+              <span class="catalog-last-product-price">12500 Р.</span>
               <div class="catalog-popup">
                 <a href="#" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
@@ -285,8 +282,7 @@
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
-            <li class="catalog-production-perf">
-              <div class="flag flag-new">новинка</div>
+            <li class="catalog-production-perf flag-new">
               <img src="img/content-images/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
               <!--
                 тут должна быть картинка Перфоратор BOSCH BFG 6000
@@ -315,8 +311,7 @@
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
-            <li class="catalog-production-perf">
-              <div class="flag flag-new">новинка</div>
+            <li class="catalog-production-perf flag-new">
               <img src="img/content-images/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
               <!--
                 тут должна быть картинка Перфоратор BOSCH BFG 3000
@@ -376,8 +371,8 @@
       <div class="perforators-about-center-container">
         <h2 class="perforators-title">Пара слов о перфораторах</h2>
         <p class="perforators-description">
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-          бетоне и камне.<br>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
           шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
           совмещены отбойный молоток и ударная дрель.
@@ -421,7 +416,7 @@
           <a href="tel:+78125550555" class="footer-contact-telephone">+7 (812) 555-05-55</a>
         </div>
         <ul class="footer-offer-panel">
-          <li class=footer-offer-panel-li"">
+          <li class="footer-offer-panel-li">
             <a href="#" class="footer-offer-panel-links">Материалы</a>
           </li>
           <li class="footer-offer-panel-li">
