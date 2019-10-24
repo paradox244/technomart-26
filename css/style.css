@@ -969,6 +969,7 @@ input[type="search"]::placeholder {
 .catalog-popup-buy:before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     background-image: url("../img/icon-svg/cart-icon.svg");
     background-repeat: no-repeat;
@@ -1216,6 +1217,7 @@ input[type="search"]::placeholder {
 
 .credit-details-btn {
     display: inline-block;
+    vertical-align: middle;
     background-color: #ff5357;
     font-family: 'Cuprum', Arial, sans-serif;
     text-transform: uppercase;
@@ -1344,6 +1346,7 @@ input[type="search"]::placeholder {
 
 .slider-controls-btn label {
     display: inline-block;
+    vertical-align: middle;
     margin: 0 3px;
     width: 4px;
     height: 4px;
@@ -1778,6 +1781,7 @@ footer p{
 .footer-social {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -2052,6 +2056,7 @@ footer p{
 .product-inner-popap {
     font-family: 'Cuprum', Arial, sans-serif;
     display: inline-block;
+    vertical-align: middle;
     margin: 0 0 69px 180px;
     font-weight: 400;
     font-size: 30px;
@@ -2103,6 +2108,7 @@ footer p{
 
 .product-order-btn {
     display: inline-block;
+    vertical-align: middle;
     border: none;
     padding: 0 0 0 0;
     margin: 0 20px 0 0;
@@ -2513,6 +2519,7 @@ footer p{
 
 .price-controls label {
     display: inline-block;
+    vertical-align: middle;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -2632,28 +2639,6 @@ footer p{
     line-height: 1.76;
     color: #000;
 }
-
-/* .brand-container input[type="checkbox"] {
-    display: none;
-}
-
-.brand-container label {
-    cursor: pointer;
-    padding: 4px 0 4px 34px;
-}
-
-.brand-container {
-    padding: 5px 0;
-    background: url("../img/btn/icon_check_off.svg") no-repeat 0px 5px;
-}
-
-.brand-container input:checked+label {
-    background: url("../img/btn/icon_check_on.svg") no-repeat 0px 4px;
-}
-
-input[chexbox]:checked + .brand-check {
-    background: url("../img/btn/icon_check_on.svg") no-repeat 0px 0px;
-} */
 
 .filter-brands-checkbox+label::before {
     content: "";
