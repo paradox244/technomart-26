@@ -181,7 +181,7 @@
                 <label for="charge-device" class="type-device">Аккумуляторные</label>
               </div>
               <div class="network radio_btn">
-                <input id="network-device" class="radio-network" type="radio" name="type-supply" value="network" >
+                <input id="network-device" class="radio-network" type="radio" name="type-supply" value="network" disabled>
                 <label for="network-device" class="type-device">Сетевые</label>
               </div>
               <button type="submit" class="panel-form-btn">Показать</button>
@@ -190,8 +190,10 @@
       </div>
       <div class="catalog-goods-column">
           <div class="catalog-filter-options">
-            <span class="catalog-filter-sorting">Сортировка:</span>
             <ul class="catalog-options-parameter">
+              <li class="catalog-options-filter-sorting">
+                <span class="catalog-filter-sorting">Сортировка:</span>
+              </li>
               <li class="catalog-options-btn-first">
                 <a href="#" class="catalog-options-btn catalog-options-btn-active">По цене</a>
               </li>
