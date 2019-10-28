@@ -381,7 +381,7 @@ input[type="search"]::placeholder {
     position: relative;
     text-align: center;
     max-width: 300px;
-    margin:16px -28px 0 0;
+    margin:16px -28px 0px 0;
 }
 
 .header-contact-telephone {
@@ -409,8 +409,9 @@ input[type="search"]::placeholder {
 
 .header-contact-address {
     font-size: 14px;
+    letter-spacing: 0.04px;
     line-height: 1.71;
-    margin: 17px 2px 0 0;
+    margin: 16px 2px 0 0;
     text-align: center;
     color: #32425c;
 }
@@ -419,9 +420,10 @@ input[type="search"]::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    width: 284px;
-    margin: -27px 12px 0 0;
+    width: 300px;
+    margin: -27px -5px 0 0;
 }
 
 .header-user-login {
@@ -436,7 +438,7 @@ input[type="search"]::placeholder {
 
 .header-user-registration {
     padding: 14px 27px 11px 24px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 8px;
     font-size: 21px;
     line-height: 1;
     color: #000;
@@ -521,7 +523,7 @@ input[type="search"]::placeholder {
 }
 
 .header-nav-panel {
-    margin-top: 23px;
+    margin-top: 24px;
     width: 100%;
 }
 
@@ -851,20 +853,8 @@ input[type="search"]::placeholder {
     border-left-color: #ee3643;
 }
 
-.popular-catalog-products-li .catalog-popup {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 218px;
-    height: 88px;
-    padding: 40px 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 10;
-}
-
-.popular-catalog-products-li .catalog-popup .catalog-popup-buy,
-.popular-catalog-products-li .catalog-popup .catalog-popup-bookmark {
+.catalog-popup-buy,
+.catalog-popup-bookmark {
     display: block;
     width: 129px;
     margin: 0 auto;
@@ -882,32 +872,32 @@ input[type="search"]::placeholder {
     text-transform: uppercase;
 }
 
-.popular-catalog-products-li .catalog-popup .catalog-popup-bookmark {
+.catalog-popup-bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
 }
 
-.popular-catalog-products-li .catalog-popup .catalog-popup-bookmark:hover,
-.catalog-production-perf .catalog-popup .catalog-popup-bookmark:hover {
+.catalog-popup-bookmark:hover,
+.catalog-popup-bookmark:hover {
     border: solid 3px #32425c;
 }
 
-.popular-catalog-products-li .catalog-popup .catalog-popup-bookmark:active,
-.catalog-production-perf .catalog-popup .catalog-popup-bookmark:active {
+.catalog-popup-bookmark:active,
+.catalog-popup-bookmark:active {
     border: solid 3px #32425c;
     opacity: 0.3;
 }
 
-.popular-catalog-products-li .catalog-popup .catalog-popup-buy:hover,
-.catalog-production-perf .catalog-popup .catalog-popup-buy:hover {
+.catalog-popup-buy:hover,
+.catalog-popup-buy:hover {
     background-color: #5fbb2d;
     border: 3px solid #5fbb2d;
     border-bottom-color: #367315;
 }
 
-.popular-catalog-products-li .catalog-popup .catalog-popup-buy:active,
-.catalog-production-perf .catalog-popup .catalog-popup-buy:active {
+.catalog-popup-buy:active,
+.catalog-popup-buy:active {
     background-color: #518534;
     border: 3px solid #518534;
     border-bottom-color: #518534;
@@ -945,8 +935,8 @@ input[type="search"]::placeholder {
     height: 15px;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    top: 2px;
-    left: -23px;
+    top: -1px;
+    left: -21px;
     opacity: 0.3;
 }
 
@@ -1057,71 +1047,15 @@ input[type="search"]::placeholder {
     margin: 0;
 }
 
-.button-slider-controls {
-    margin: 69px 0 0 0;
-    list-style-type: none;
-    padding-left: 0;
-    position: relative;
-}
-
-.button-slider-controls:after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    top: -45px;
-    width: 10px;
-    height: 279px;
-    background-image: url("../img/shadow.png");
-    background-repeat: no-repeat;
-    background-size: 10px 279px;
-}
-
-.btn-slider-controls  {
-    text-align: left;
-    width: 210px;
-    padding: 0 10px 0px 20px;
-    font-family: "Cuprum", Arial, sans-serif;
-    min-height: 61px;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.43;
-    color: #ffffff;
-    border: none;
-    background-color: #32425c;
-    border-bottom: 1px solid #293449;
-}
-
-.btn-slider-controls:hover {
-    background-color: #293449;
-}
-
-.btn-slider-controls:active {
-    background-color: #fff;
-    color:#32425c;
-}
-
-.service-slider-tab {
-    min-width: 715px;
-    min-height: 300px;
-    margin: 31px 0 0 0;
-}
-
-.advantage-details-delivery {
-    min-height: 200px;
-    background-image: url("../img/content-images/delivery-image.png");
-    background-repeat: no-repeat;
-    background-position: 150px 25px;
-    margin: 0 0 0 80px;
-}
-
 .advantage-details-delivery-title {
+    padding: 32px 0 0 80px;
     margin-bottom: 25px;
 }
 
 
 .advantage-details-delivery-info {
     margin: 0 0 0 0;
-    padding: 0 0 0px 0;
+    padding: 0 0 0px 80px;
 }
 
 .advantage-details-delivery-title,
@@ -1148,15 +1082,8 @@ input[type="search"]::placeholder {
     color: #000000;
 }
 
-.advantage-details-warranty {
-    display: none;
-    margin: 38px 0 0 80px;
-    background-image: url("../img/content-images/warranty-image.png");
-    background-repeat: no-repeat;
-    background-position: 238px 3px;
-}
-
 .advantage-details-warranty-title {
+    padding: 67px 0 0 79px;
     margin: 0 0 0 0;
     letter-spacing: 0.5px;
 }
@@ -1164,28 +1091,21 @@ input[type="search"]::placeholder {
 .advantage-details-warranty-info {
     width: 380px;
     margin: 24px 0 0 0;
-    padding: 0 0 70px 0;
-}
-
-.advantage-details-credit {
-    display: none;
-    background-image: url("../img/content-images/credit-image.png");
-    background-repeat: no-repeat;
-    background-position: 165px 3px;
-    margin: 36px 0 0 78px;
+    padding: 1px 0 70px 78px;
 }
 
 .advantage-details-credit-title {
+    padding: 68px 0 0 77px;
     margin: 0 0 0 0;
 }
 
 .advantage-details-credit-info {
+    padding: 0px 0 0 79px;
     margin: 25px 0 0 0;
 }
 
 .credit-details-btn {
     display: inline-block;
-    vertical-align: middle;
     background-color: #ff5357;
     font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
@@ -1193,11 +1113,12 @@ input[type="search"]::placeholder {
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
-    padding: 10px 45px;
-    margin: 27px 0 20px 0;
+    margin: 26px 0 20px 78px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    width: 183px;
+    min-height: 37px;
 }
 
 .credit-details-btn:hover {
@@ -1279,6 +1200,7 @@ input[type="search"]::placeholder {
 
 .slider-slides {
     width: 300%;
+    height: 266px;
     -webkit-transition: -webkit-transform 0.8s ease;
     transition: -webkit-transform 0.8s ease;
     transition: transform 0.8s ease;
@@ -1286,7 +1208,7 @@ input[type="search"]::placeholder {
 }
 
 .slider-slides .slide {
-    float: left;
+    display: inline-flex;
     width: 620px;
     height: 266px;
 }
@@ -1342,14 +1264,157 @@ input[type="search"]::placeholder {
             transform: translate(-620px);
 }
 
+.block-center {
+    width: 940px;
+    height: 500px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
 
-.service-slider-controls {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.tab-services {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 23px;
+    min-height: 330px;
 }
 
+#btn-3:hover~.service-controls label[for="btn-3"],
+#btn-4:hover~.service-controls label[for="btn-4"],
+#btn-5:hover~.service-controls label[for="btn-5"],
+#btn-3:focus~.service-controls label[for="btn-3"],
+#btn-4:focus~.service-controls label[for="btn-4"],
+#btn-5:focus~.service-controls label[for="btn-5"] {
+    -webkit-box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    background-color: #293449;
+}
+
+#btn-3:checked~.service-controls label[for="btn-3"],
+#btn-4:checked~.service-controls label[for="btn-4"],
+#btn-5:checked~.service-controls label[for="btn-5"] {
+    color: #000000;
+    -webkit-box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+    box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+    background-color: #ffffff;
+}
+
+.service-controls label {
+    display: block;
+    -webkit-box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    cursor: pointer;
+    text-align: left;
+    width: 210px;
+    padding: 16.1px 10px 16.1px 20px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: #ffffff;
+    border: none;
+    background-color: #32425c;
+}
+
+.service-controls {
+    display: block;
+    position: relative;
+    min-height: 279px;
+    padding-top: 68px;
+    padding-bottom: 48px;
+}
+
+.service-controls::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 10px;
+    height: 279px;
+    background-image: url(../img/shadow.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+#btn-3:checked~.service-slides .delivery-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#btn-4:checked~.service-slides .guarantee-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#btn-5:checked~.service-slides .credit-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.service-slide {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 699px;
+    min-height: 330px;
+    padding: 0 0 0 0;
+}
+
+.delivery-slide {
+    background-image: url(../img/content-images/delivery-image.png);
+    background-repeat: no-repeat;
+    background-position: 100% 135%;
+}
+
+.guarantee-slide {
+    background-image: url(../img/content-images/warranty-image.png);
+    background-repeat: no-repeat;
+    background-position: 102% 150%;
+}
+
+.credit-slide {
+    background-image: url(../img/content-images/credit-image.png);
+    background-repeat: no-repeat;
+    background-position: 104% 151%;
+}
+
+.credit-slide .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 195px;
+    height: 38px;
+}
 /***************************main -> section company***************************/
 
 .company {
@@ -1507,12 +1572,12 @@ input[type="search"]::placeholder {
 }
 
 .company-description {
-    margin: 42px 0 86px 0;
+    margin: 1px 0 86px 0;
     width: 540px;
 }
 
 .company-contacts {
-    margin-top: 50px;
+    margin-top: 9px;
     width: 300px;
 }
 
@@ -1527,7 +1592,10 @@ input[type="search"]::placeholder {
 }
 
 /***************************footer -> footer-top-panel***************************/
-footer p{
+.footer-contacts-address,
+.footer-bottom-copyright-text,
+.footer-bottom-feedback-text,
+.footer-bottom-design-text {
     margin: 0;
 }
 
@@ -2146,6 +2214,34 @@ footer p{
 }
 
 
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+
 /*************************** catalog ***************************/
 .header-top-panel {
     background-color: #293449;
@@ -2533,6 +2629,10 @@ footer p{
     padding: 0 0 0 34px;
 }
 
+.brand-container input[type="checkbox"]:focus+label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
 .brand-container-first {
     margin: 14px 0 21px 0;
 }
@@ -2614,7 +2714,6 @@ footer p{
     background-image: url("../img/btn/icon_check_on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-
 }
 
 .filter-brands-checkbox:checked+label::before {
@@ -2633,6 +2732,12 @@ footer p{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
+.filter-brands-checkbox:disabled+label,
+.radio-network:disabled+label {
+    opacity: 0.4;
+}
+
 
 .label-brand {
     position: relative;
@@ -2667,6 +2772,7 @@ footer p{
 }
 
 .network {
+    opacity: 0.4;
     margin: 0 0 70px 0px;
 }
 
@@ -2834,33 +2940,8 @@ footer p{
     width: 218px;
     height: 88px;
     padding: 40px 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 10;
-}
-
-.catalog-production-perf .catalog-popup .catalog-popup-buy,
-.catalog-production-perf .catalog-popup .catalog-popup-bookmark {
-    display: block;
-    width: 129px;
-    margin: 0 auto;
-    margin-bottom: 7px;
-    padding: 7px 0;
-    background-color: #63a63e;
-    border: 3px solid #63a63e;
-    border-bottom-color: #367315;
-    border-radius:3px;
-    color: white;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.catalog-production-perf .catalog-popup .catalog-popup-bookmark {
-    color: #32425c;
-    background: white;
-    border-bottom-color: #63a63e;
 }
 
 .catalog-production-perf .catalog-popup {
