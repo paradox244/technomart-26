@@ -1,6 +1,21 @@
 var feedbackPopup = document.querySelector(".feedback-container");
 var feedbackButton = document.querySelector(".company-message");
 var feedbackClose = document.querySelector(".feedback-close");
+var popup = document.querySelector(".feedback-container");
+var form;
+
+if (popup) {
+    form = popup.querySelector("form");
+
+    form.addEventListener("submit", function (evt) {
+        if (!form.querySelector('.feedback-email-data').value) {
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            evt.preventDefault();
+            popup.classList.add("modal-error");
+        }
+    });
+}
 
 if (feedbackButton != null && feedbackClose != null) {
     feedbackButton.addEventListener("click", function (event) {
@@ -11,6 +26,7 @@ if (feedbackButton != null && feedbackClose != null) {
     feedbackClose.addEventListener("click", function (event) {
         event.preventDefault(event);
         feedbackPopup.classList.remove("show-block");
+        popup.classList.remove("modal-error");
     });
 
     window.addEventListener("keydown", function (event) {

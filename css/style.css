@@ -427,6 +427,7 @@ input[type="search"]::placeholder {
 }
 
 .header-user-login {
+    position: relative;
     font-size: 21px;
     line-height: 1;
     color: #000;
@@ -463,8 +464,8 @@ input[type="search"]::placeholder {
     background-size: 20px 17px;
     width: 20px;
     height: 17px;
-    top: 15px;
-    left: 29px;
+    top: 16px;
+    left: 13px;
 }
 
 .header-user-login:hover,
@@ -804,9 +805,7 @@ input[type="search"]::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     list-style-type: none;
     width: 100%;
@@ -814,6 +813,15 @@ input[type="search"]::placeholder {
     margin-top: 18px;
     margin-bottom: 0;
     padding-left: 0;
+}
+
+.popular-catalog-products-li {
+    margin: 0 17px 0 0;
+}
+
+.popular-catalog-products-li:nth-child(4),
+.popular-catalog-products-li:nth-child(7) {
+    margin: 0 0 0 0;
 }
 
 .popular-catalog-products-li {
@@ -1286,7 +1294,7 @@ input[type="search"]::placeholder {
     justify-content: center;
 }
 
-.visually-hidden:not(:focus):not(:active),
+/* .visually-hidden:not(:focus):not(:active), */
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
@@ -1617,10 +1625,13 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
     width: 220px;
-    padding: 20px 0 0 0;
+    height: 61px;
     background-color: #ee3643;
     box-shadow: #ca2c37 0 7px 0 0;
 }
@@ -1803,6 +1814,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #293449;
     width: 940px;
     margin: 0 auto;
@@ -2517,12 +2529,18 @@ input[type="radio"].visually-hidden {
     padding: 0 42px 0 0;
 }
 
+.li-fourth {
+    padding: 0 10px 0 0;
+}
+
 .links-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     position: relative;
+    width: 940px;
     margin: 21px 0 0 0;
     padding-left: 0;
 }
@@ -2780,7 +2798,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-brands-checkbox:disabled+label,
-.radio-network:disabled+label {
+.radio-network:disabled+label,
+.radio-charge:disabled+label {
     opacity: 0.4;
 }
 
@@ -2790,36 +2809,47 @@ input[type="radio"].visually-hidden {
 }
 
 .type-device {
-    padding: 0 0 0 18px;
+    position: relative;
+    padding: 0 0 0 35px;
+}
+
+.power-supply-list {
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 .charge {
-    margin: 9px 0 8px 0;
+    margin: 14px 0 21px 0;
 }
 
-.radio_btn input[type="radio"] {
-	display: none;
-}
-.radio_btn label {
-	padding-left: 34px;
-}
-
-.radio_btn {
-    padding: 4px 0 4px 0;
-    background: url("../img/btn/icon_circle.svg") no-repeat 0px 2px;
-    width: 25px;
-    height: 25px;
-}
-
-.radio_btn input:checked+label {
-    background: url("../img/btn/icon_circle_dot.svg") no-repeat 0px -2px;
-    width: 25px;
-    height: 25px;
+.radio-network + .type-device::before,
+.radio-charge + .type-device::before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    top: -2px;
+    left: -1px;
+    background-image: url(../img/btn/icon_circle.svg);
+    background-repeat: no-repeat;
+    opacity: 0.78;
 }
 
-.network {
-    opacity: 0.4;
-    margin: 0 0 70px 0px;
+.radio-network:checked + .type-device::before,
+.radio-charge:checked + .type-device::before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    top: -2px;
+    left: -1px;
+    background-image: url(../img/btn/icon_circle_dot.svg);
+    background-repeat: no-repeat;
+}
+
+.radio_btn:focus+label::before {
+    outline: rgb(59, 153, 252) auto 5px;
 }
 
 .label-brand,
@@ -2835,6 +2865,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     width: 137px;
     padding: 8px 0;
+    margin: 81px 0 0 0;
     font-size: 13px;
     line-height: 1.38;
     text-align: center;
@@ -2906,11 +2937,19 @@ input[type="radio"].visually-hidden {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: flex-start;
     width: 700px;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.catalog-production-perf {
+    margin: 20px 17px 0 0;
+}
+
+.catalog-production-perf:nth-child(3n) {
+    margin: 20px 0 0 0;
 }
 
 .catalog-options-parameter {
