@@ -788,10 +788,14 @@ input[type="search"]::placeholder {
     width: 100%;
 }
 
-.popular-title {
+.popular-title-container {
     width: 264px;
-    height: 30px;
     margin: 31px 0px 31px 28px;
+}
+
+.popular-title {
+    margin: 0;
+    height: 30px;
     font-size: 30px;
     font-weight: 500;
     line-height: 1;
@@ -959,13 +963,15 @@ input[type="search"]::placeholder {
     border-bottom-color: #518534;
 }
 
-.catalog-popup-buy:focus {
+.catalog-popup-buy:focus,
+.catalog-popup-bookmark:focus {
     outline: 1px solid rgb(59, 153, 252);
 }
 
-.catalog-popup:focus-within {
+.popular-catalog-products-li:focus-within {
     outline: 1px solid rgb(59, 153, 252);
 }
+
 
 .popular-catalog-products-li .catalog-popup {
     display: none;
