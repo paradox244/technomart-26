@@ -789,7 +789,6 @@ input[type="search"]::placeholder {
 }
 
 .popular-title {
-    width: 264px;
     margin: 31px 0px 31px 28px;
     height: 30px;
     font-size: 30px;
@@ -807,6 +806,11 @@ input[type="search"]::placeholder {
     line-height: 1;
     text-transform: uppercase;
     color: #32425c;
+}
+
+.inner-popular-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .popular-subtitle,
